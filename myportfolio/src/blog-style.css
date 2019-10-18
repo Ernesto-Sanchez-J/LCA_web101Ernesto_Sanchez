@@ -1,0 +1,18 @@
+
+h1 {
+    color: rgb(24, 133, 20);
+    width: auto;
+    margin: 5% auto;
+    text-align: center;
+} 
+
+body {
+    background: blue;
+}
+
+main {
+    background: cornsilk;
+    width: auto;
+    margin: 5% auto;
+    
+}
