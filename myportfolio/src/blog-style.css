@@ -2,7 +2,7 @@
 h1 {
     color: rgb(24, 133, 20);
     width: auto;
-    margin: 5% auto;
+    margin: 6% auto;
     text-align: center;
 } 
 
@@ -11,8 +11,13 @@ body {
 }
 
 main {
-    background: cornsilk;
     width: auto;
     margin: 5% auto;
     
+}
+
+article {
+    margin: 2%;
+    border: 3px solid rgb(7, 126, 116);
+    background: crimson;
 }
