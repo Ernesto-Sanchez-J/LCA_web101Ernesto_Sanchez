@@ -9,6 +9,7 @@ h1 {
     font-family: Arial, Helvetica, sans-serif;
 } 
 
+
 body {
     background-image: url(https://images.unsplash.com/photo-1526080676457-4544bf0ebba9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80);
     background-repeat: no-repeat;
@@ -32,4 +33,7 @@ article {
     font-size: auto;
 
 
+}
+p:hover:first-letter {
+    color: rgb(16, 199, 16)
 }
