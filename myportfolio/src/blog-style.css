@@ -6,6 +6,7 @@ h1 {
     background: rgb(10, 19, 151);
     width: 500px;
     border-radius: 3px;
+    font-family: Arial, Helvetica, sans-serif;
 } 
 
 body {
@@ -24,8 +25,11 @@ main {
 }
 
 article {
-    margin: 2%;
+    margin: 3%;
     border: 3px solid rgb(7, 126, 116);
     background: crimson;
-    
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: auto;
+
+
 }
