@@ -90,6 +90,7 @@ body {
     color: white;
     letter-spacing: 15px;
     font-style: italic;
+    
   }
   /* Mobile*/
   @media screen and (max-width: 320px) {
