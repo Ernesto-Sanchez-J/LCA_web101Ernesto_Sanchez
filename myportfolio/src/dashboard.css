@@ -173,5 +173,16 @@ border: solid blue 3px;
     grid-row-gap: 20px;
     grid-column-gap: 20px;
   }
-  
+  /* Mobile*/
+  @media screen and (max-width: 320px) {
+    display: flex;
+    flex-wrap: wrap;
+
+     
+   }
+ }
+ /* Tablet*/
+ @media (min-width: 576px) {
+   
+ }
   
