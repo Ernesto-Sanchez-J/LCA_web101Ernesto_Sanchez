@@ -1,42 +1,43 @@
 html {
-    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-    font-size: 125%;
-    line-height: 1.4;
-    font-weight: 400;
-    color: var(--blue-grey-900);
-  }
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-size: 125%;
+  line-height: 1.4;
+  font-weight: 400;
+  color: var(--blue-grey-900);
+}
 .container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 40% 60%;
-    grid-template-areas: 
-      "Greetings todo Date"
-      "calc todo calendar";
-      grid-gap: 5px;
-  }
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 40% 60%;
+  grid-template-areas: 
+    "Greetings todo Date"
+    "calc todo calendar";
+    grid-gap: 5px;
+}
+/* dashboard*/ 
 
 header{
-    grid-area: Greetings;
+  grid-area: Greetings;
 }
 nav{
-    grid-area: Date;
+  grid-area: Date;
 }
 main{
-    grid-area: todo;
+  grid-area: todo;
 }
 aside{
-    grid-area: calc;
+  grid-area: calc;
 }
 footer{
-    grid-area: calendar;
+  grid-area: calendar;
 }
 header{
-    background: blue;
-    border: solid black 3px;
+  background: blue;
+  border: solid black 3px;
 }
 main{
-    background: grey;
-    border: solid red 3px;
+  background: grey;
+  border: solid red 3px;
 }
 nav{
 background: tan;
@@ -46,132 +47,141 @@ aside{
 border: solid blue 3px;
 }
 
+/*calendar*/
+footer {
+  min-height: 100vh;
+  background: var(--blue-grey-100);
+}
+
+footer {
+  max-width: max-content;
+  margin: 3em auto 0 auto;
+  padding: 1.5em;
+  background-color: #fff;
+  border: 2px solid var(--blue-grey-200);
+  border-radius: 8px;
+}
+
+.month-indicator {
+  color: var(--blue-grey-700);
+  text-align: center;
+  font-weight: 500;
+}
+
+.day-of-week, 
+.date-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
   
-  footer {
-    min-height: 100vh;
-    background: var(--blue-grey-100);
-  }
-  
-  footer {
-    max-width: max-content;
-    margin: 3em auto 0 auto;
-    padding: 1.5em;
-    background-color: #fff;
-    border: 2px solid var(--blue-grey-200);
-    border-radius: 8px;
-  }
-  
-  .month-indicator {
-    color: var(--blue-grey-700);
-    text-align: center;
-    font-weight: 500;
-  }
-  
-  .day-of-week, 
-  .date-grid {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    
-  }
-  
-  
-  .day-of-week > * {
-    font-size: 0.7em;
-    color: var(--blue-grey-400);
-    font-weight: 500;
-    letter-spacing: 0.1em;
-    font-variant: small-caps;
-    text-align: center;
-  }
-  
-  .date-grid {
-    margin-top: 0.5em;
-  }
+}
+
+
+.day-of-week > * {
+  font-size: 0.7em;
+  color: var(--blue-grey-400);
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  font-variant: small-caps;
+  text-align: center;
+}
+
+.date-grid {
+  margin-top: 0.5em;
+}
+
+.date-grid button:first-child {
+  grid-column: 6;
+}
+
+.date-grid button {
+  position: relative;
+  border: 0;
+  width: 4.5ch;
+  height: 4.5ch;
+  border-radius: 50%;
+  background-color: transparent;
+  color: var(--blue-grey-600);
+}
+
+.date-grid button:hover,
+.date-grid button:focus {
+  outline: none;
+  background-color: var(--blue-grey-050);
+  color: var(--blue-grey-700);
+}
+
+.date-grid button:active,
+.date-grid button.is-selected {
+  background-color: var(--teal-100);
+  color: var(--teal-900);
+}
+
+button {
+  height: 60px;
+  background-color: #fff;
+  border-radius: 3px;
+  border: 1px solid #c4c4c4;
+  background-color: transparent;
+  font-size: 2rem;
+  color: #333;
+  background-image: linear-gradient(to bottom,transparent,transparent 50%,rgba(0,0,0,.04));
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,.05), inset 0 1px 0 0 rgba(255,255,255,.45), inset 0 -1px 0 0 rgba(255,255,255,.15), 0 1px 0 0 rgba(255,255,255,.15);
+  text-shadow: 0 1px rgba(255,255,255,.4);
+}
+
+button:hover {
+  background-color: #eaeaea;
+}
+
+.operator {
+  color: #337cac;
+}
+
+.all-clear {
+  background-color: #f0595f;
+  border-color: #b0353a;
+  color: #fff;
+}
+
+.all-clear:hover {
+  background-color: #f17377;
+}
+/*calculator*/
+.equal-sign {
+  background-color: #2e86c0;
+  border-color: #337cac;
+  color: #fff;
  
-  .date-grid button:first-child {
-    grid-column: 6;
-  }
-  
-  .date-grid button {
-    position: relative;
-    border: 0;
-    width: 4.5ch;
-    height: 4.5ch;
-    border-radius: 50%;
-    background-color: transparent;
-    color: var(--blue-grey-600);
-  }
-  
-  .date-grid button:hover,
-  .date-grid button:focus {
-    outline: none;
-    background-color: var(--blue-grey-050);
-    color: var(--blue-grey-700);
-  }
-  
-  .date-grid button:active,
-  .date-grid button.is-selected {
-    background-color: var(--teal-100);
-    color: var(--teal-900);
-  }
-  
-  button {
-    height: 60px;
-    background-color: #fff;
-    border-radius: 3px;
-    border: 1px solid #c4c4c4;
-    background-color: transparent;
-    font-size: 2rem;
-    color: #333;
-    background-image: linear-gradient(to bottom,transparent,transparent 50%,rgba(0,0,0,.04));
-    box-shadow: inset 0 0 0 1px rgba(255,255,255,.05), inset 0 1px 0 0 rgba(255,255,255,.45), inset 0 -1px 0 0 rgba(255,255,255,.15), 0 1px 0 0 rgba(255,255,255,.15);
-    text-shadow: 0 1px rgba(255,255,255,.4);
-  }
-  
-  button:hover {
-    background-color: #eaeaea;
-  }
-  
-  .operator {
-    color: #337cac;
-  }
-  
-  .all-clear {
-    background-color: #f0595f;
-    border-color: #b0353a;
-    color: #fff;
-  }
-  
-  .all-clear:hover {
-    background-color: #f17377;
-  }
-  
-  .equal-sign {
-    background-color: #2e86c0;
-    border-color: #337cac;
-    color: #fff;
-    height: 100%;
-    grid-row-start: 2;
-    grid-row-end: 6;
-    grid-column-start: 4;
-    grid-column-end: 5;
-  }
-  
-  .equal-sign:hover {
-    background-color: #4e9ed4;
-  }
-  .calculator-keys {
-    display: grid;
-  }
-  .calculator-keys {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
-  .calculator-keys {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-row-gap: 20px;
-    grid-column-gap: 20px;
-  }
-  
-  
+}
+
+.equal-sign:hover {
+  background-color: #4e9ed4;
+  order: 8;flex: 1;
+}
+.calculator-keys {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: wrap row;
+  padding: 5px 5px 10px 5px;
+  border-radius: 4px;
+}
+ 
+.operator {
+  flex-basis: 25%;
+
+}
+.number {
+flex-basis: 25%;
+}
+
+
+/* Mobile*/
+@media screen and (max-width: 320px) {
+ 
+}
+
+/* Tablet*/
+@media (min-width: 576px) {
+ 
+}
+
