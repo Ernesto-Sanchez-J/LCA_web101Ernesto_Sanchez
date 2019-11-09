@@ -14,6 +14,7 @@ html {
       "calc todo calendar";
       grid-gap: 5px;
   }
+/* dashboard*/ 
 
 header{
     grid-area: Greetings;
@@ -46,7 +47,7 @@ aside{
 border: solid blue 3px;
 }
 
-  
+  /*calendar*/
   footer {
     min-height: 100vh;
     background: var(--blue-grey-100);
@@ -145,42 +146,40 @@ border: solid blue 3px;
   .all-clear:hover {
     background-color: #f17377;
   }
-  
+  /*calculator*/
   .equal-sign {
     background-color: #2e86c0;
     border-color: #337cac;
     color: #fff;
-    height: 100%;
-    grid-row-start: 2;
-    grid-row-end: 6;
-    grid-column-start: 4;
-    grid-column-end: 5;
+   
   }
   
   .equal-sign:hover {
     background-color: #4e9ed4;
+    order: 8;flex: 1;
   }
   .calculator-keys {
-    display: grid;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: wrap row;
+    padding: 5px 5px 10px 5px;
+    border-radius: 4px;
   }
-  .calculator-keys {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+   
+  .operator {
+    flex-basis: 25%;
+ 
   }
-  .calculator-keys {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-row-gap: 20px;
-    grid-column-gap: 20px;
+  .number {
+flex-basis: 25%;
   }
+  
+  
   /* Mobile*/
   @media screen and (max-width: 320px) {
-    display: flex;
-    flex-wrap: wrap;
-
-     
-   }
- }
+   
+  }
+ 
  /* Tablet*/
  @media (min-width: 576px) {
    
