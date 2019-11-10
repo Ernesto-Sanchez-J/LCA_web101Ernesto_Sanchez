@@ -6,6 +6,7 @@ html {
   color: var(--blue-grey-900);
 }
 .container {
+
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 40% 60%;
@@ -14,6 +15,7 @@ html {
     "calc todo calendar";
     grid-gap: 5px;
 }
+
 /* dashboard*/ 
 
 header{
@@ -46,6 +48,7 @@ border: solid grey 3px;
 aside{
 border: solid blue 3px;
 }
+
 
 /*calendar*/
 footer {
@@ -184,4 +187,3 @@ flex-basis: 25%;
 @media (min-width: 576px) {
  
 }
-

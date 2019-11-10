@@ -1,0 +1,44 @@
+
+body {
+    width: 850px;
+    margin: 0 auto;
+}
+main {
+    display: flex;
+    height: 450px;
+    background-image: url(../src/img/space.jpg.jpg) ;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Lato', sans-serif;
+    font-size: 70px;
+    }
+div {
+    height: 20px;
+    background-color: white;
+}
+section {
+    display: flex;
+    height: 324px;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    background: rgb(141, 131, 131);
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Lato', sans-serif;
+    font-size: 17px;
+    padding-top: 5%;
+}
+article{
+    display: flex;
+    width: 270px;
+    flex-flow: column nowrap;
+    font-style: bold;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+textarea {
+    width: 100%;
+    height: 100px
+}
