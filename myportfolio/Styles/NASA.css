@@ -6,7 +6,7 @@ body {
 main {
     display: flex;
     height: 450px;
-    background-image: url(../src/img/space.jpg.jpg) ;
+    background-image: url(/Images/space.jpg.jpg) ;
     color: white;
     display: flex;
     align-items: center;
