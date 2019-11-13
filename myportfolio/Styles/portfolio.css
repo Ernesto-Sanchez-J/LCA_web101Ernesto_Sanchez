@@ -28,8 +28,6 @@ header {
     margin: 3% 10%;
   }
   body {
-    display: flex;
-    flex-flow: row wrap;
     background-color: cadetblue;
 
   }
@@ -38,4 +36,11 @@ header {
     border-bottom: solid blue;
     border-width: 6px;
     clear: both;
+  }
+  .screen {
+
+  }
+  .buttons {
+    display: flex;
+    flex-flow: row nowrap;
   }
