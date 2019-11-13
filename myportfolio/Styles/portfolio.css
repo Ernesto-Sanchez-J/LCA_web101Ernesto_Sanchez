@@ -38,6 +38,7 @@ header {
     clear: both;
   }
   .screen {
+      width: auto;
 
   }
   .buttons {
