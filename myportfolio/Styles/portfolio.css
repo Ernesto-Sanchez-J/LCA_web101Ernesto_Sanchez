@@ -38,7 +38,7 @@ header {
     clear: both;
   }
   .screen {
-
+    width: auto;
   }
   .buttons {
     display: flex;
