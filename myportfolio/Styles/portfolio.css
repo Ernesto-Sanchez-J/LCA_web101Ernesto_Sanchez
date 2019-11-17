@@ -1,7 +1,7 @@
 header {
     display: grid;
     grid-template-columns: 40% 60%;
-    width: 100%;
+    width: 90%;
     background-color: rgb(175, 123, 26);
   }
   .logo {
@@ -34,6 +34,10 @@ header {
   }
   body {
     background-color: cadetblue;
+    max-width: 90%;
+    margin: auto;
+    background: rgb(124, 102, 102);
+    padding: 10px;    
 
   }
   .border {
@@ -44,11 +48,13 @@ header {
   }
   .screen {
     width: 90%;
-    height: 90%;
+    position: fixed;
+    top: auto;
+    bottom: auto;
   }
   .button {
     background-color: #4CAF50;
-    border: none;
+    border-color:black;
     color: white;
     padding: 15px 32px;
     text-align: center;
@@ -61,4 +67,8 @@ header {
   .buttons {
     display: flex;
     flex-flow: row wrap;
+  }
+  footer {
+    bottom: 0;
+    position: absolute;
   }
