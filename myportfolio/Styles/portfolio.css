@@ -33,18 +33,12 @@ header {
     margin: 3% 10%;
   }
   body {
-    background-color: cadetblue;
+    background-image: url(../Images/alexander-schimmeck-ineC_oi7NHs-unsplash.jpg);
     max-width: 90%;
     margin: auto;
-    background: rgb(124, 102, 102);
-    padding: 10px;    
-
-  }
-  .border {
-    color: rgb(0, 0, 0);
-    border-bottom: solid blue;
-    border-width: 6px;
-    clear: both;
+    padding: 10px;   
+    background-repeat: no-repeat;
+    background-size: cover; 
   }
   .screen {
     width: 90%;
@@ -53,7 +47,7 @@ header {
     bottom: auto;
   }
   .button {
-    background-color: #4CAF50;
+    background-color: rgb(38, 55, 201);
     border-color:black;
     color: white;
     padding: 15px 32px;
@@ -63,6 +57,7 @@ header {
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
+    justify-content: space-between;
   }
   .buttons {
     display: flex;
@@ -71,4 +66,9 @@ header {
   footer {
     bottom: 0;
     position: absolute;
+  }
+  .preview {
+    display: flex;
+    flex-flow: row nowrap;
+    
   }
