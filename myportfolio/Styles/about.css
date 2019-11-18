@@ -32,3 +32,11 @@
     text-align: center;
     border: 2px solid black(19, 2, 2);
   }
+  body {
+    background-image: url(../Images/skyblue.jpg);
+    max-width: 90%;
+    margin: auto;
+    padding: 10px;   
+    background-repeat: no-repeat;
+    background-size: cover; 
+    }
