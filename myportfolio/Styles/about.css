@@ -40,3 +40,9 @@
     background-repeat: no-repeat;
     background-size: cover; 
     }
+    p {
+      width: 80%;
+      height: 60%;
+      font-size: 3em;
+      text-align: center;
+    }
