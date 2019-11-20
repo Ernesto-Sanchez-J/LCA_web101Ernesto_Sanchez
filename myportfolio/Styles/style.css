@@ -45,8 +45,8 @@ body {
   
   .has-border {
     border-radius: 25px;
-    border: 2px solid black(4, 18, 22);
-    background: none;
+    border: none;
+    background: black;
     padding: 20px; 
     animation-name: lightSpeedIn;
     animation-duration: 5s;
