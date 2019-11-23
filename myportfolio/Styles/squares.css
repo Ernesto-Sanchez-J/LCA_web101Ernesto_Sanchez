@@ -1,80 +1,80 @@
 body {
     text-align: center;
-    background-color: brown;
+    background-color: rgb(0, 0, 0);
 }
 .container {
     display: inline-block;
    
 }
+.container .odd {
+    transition: transform 3s;
+}
+.container .even {
+    transition: transform 3s;
+}
+.container:hover .odd {
+    transform: translate(500px, 0px) rotate(360deg) scale(2);
+}
+.container:hover .even {
+    transform: translate(-500px, 0px) rotate(-360deg) scale(.5);
+}
 .square1 {
     height: 50px;
     width: 50px;
-    background-color: rgb(238, 9, 9);
-    
+    background-color: rgb(238, 9, 9);  
 }
 .square2 {
     height: 50px;
     width: 50px;
     background-color: rgb(233, 115, 18);
-    
 }
 .square3 {
     height: 50px;
     width: 50px;
     background-color: rgb(216, 219, 6);
-    
 }
 .square4 {
     height: 50px;
     width: 50px;
     background-color: rgb(6, 235, 6);
-    
 }
 .square5 {
     height: 50px;
     width: 50px;
     background-color: rgb(5, 110, 75);
-    
 }
 .square6 {
     height: 50px;
     width: 50px;
     background-color: rgb(9, 222, 230);
-    
 }
 .square7 {
     height: 50px;
     width: 50px;
     background-color: rgb(12, 97, 167);
-    ;
 }
 .square8 {
     height: 50px;
     width: 50px;
     background-color: rgb(36, 24, 192);
-    
 }
 .square9 {
     height: 50px;
     width: 50px;
     background-color: rgb(107, 32, 228);
-    
 }
 .square10 {
     height: 50px;
     width: 50px;
     background-color: rgb(160, 37, 231);
-    
 }
 .square11 {
     height: 50px;
     width: 50px;
-    background-color: rgb(0, 0, 0);
-    
+    background-color: rgb(235, 221, 221);
 }
 .square12 {
     height: 50px;
     width: 50px;
-    background-color: rgb(85, 85, 85);
-   
+    background-color: rgb(131, 131, 131);
 }
