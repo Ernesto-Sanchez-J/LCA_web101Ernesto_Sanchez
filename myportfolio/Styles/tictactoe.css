@@ -1,0 +1,43 @@
+body {
+    background-color: blue;
+    margin: 0;
+    text-size-adjust: 100%;
+    font-family: sans-serif;
+    box-sizing: inherit;
+}
+.game {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 600px;
+    height: 600px;
+    margin-left: -300px;
+    margin-top: -370px;
+    box-sizing: inherit;
+}
+.board {
+    width: 100%;
+    height: 100%;
+    
+}
+div {
+    display: block;
+}
+.square.left {
+    border-right-style: solid;
+    clear: both;
+}
+.square.top {
+    border-bottom-style: solid;
+}
+.square.right {
+    border-left-style: solid;
+}
+.square {
+    float: left;
+    width: 33.33333%;
+    height: 33.33333%;
+    border-width: 5px;
+    border-color: rgb(255, 255, 255);
+    cursor: pointer;
+}
