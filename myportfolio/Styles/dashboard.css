@@ -14,6 +14,7 @@ html {
     "Greetings todo Date"
     "calc todo calendar";
     grid-gap: 5px;
+  background-image: url(../Images/skyblue.jpg);
 }
 
 /* dashboard*/ 
@@ -93,7 +94,7 @@ footer {
 }
 
 .date-grid button:first-child {
-  grid-column: 6;
+  grid-column: 1;
 }
 
 .date-grid button {
