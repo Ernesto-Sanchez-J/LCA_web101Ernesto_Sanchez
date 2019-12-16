@@ -12,7 +12,8 @@ html {
   grid-template-rows: 40% 60%;
   grid-template-areas: 
     "Greetings todo Date"
-    "calc todo calendar";
+    "calc todo calendar"
+    "mine mine mine";
     grid-gap: 5px;
   background-image: url(../Images/skyblue.jpg);
 }
@@ -55,7 +56,7 @@ border: solid blue 3px;
 
 /*calendar*/
 footer {
-  min-height: 100vh;
+  min-height: 90vh;
   background: var(--blue-grey-100);
 }
 
@@ -63,9 +64,12 @@ footer {
   max-width: max-content;
   margin: 3em auto 0 auto;
   padding: 1.5em;
-  background-color: #fff;
   border: 2px solid var(--blue-grey-200);
   border-radius: 8px;
+}
+.cal {
+  background-color: #fff;
+  opacity: 85%;
 }
 
 .month-indicator {
@@ -124,7 +128,7 @@ footer {
 
 button {
   height: 60px;
-  background-color: #fff;
+  background-color: rgb(196, 210, 240);
   border-radius: 3px;
   border: 1px solid #c4c4c4;
   background-color: transparent;
@@ -153,31 +157,57 @@ button:hover {
   background-color: #f17377;
 }
 /*calculator*/
-.equal-sign {
-  background-color: #2e86c0;
-  border-color: #337cac;
-  color: #fff;
- 
+title{ 
+  margin-bottom: 10px; 
+  text-align:center; 
+  width: 210px; 
+  color:green; 
+  border: solid black 2px; 
+  } 
+
+  input[type="button"] 
+  { 
+  background-color:green; 
+  color: black; 
+  border: solid black 2px; 
+  width:100% 
+  } 
+
+  input[type="text"] 
+  { 
+  background-color:white; 
+  border: solid black 2px; 
+  width:100% 
+  } 
+
+/*goldmine*/
+.push {
+  box-shadow: 0px 1px 0px 0px #fff6af;
+  background: linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
+  background-color: #ffaa64;
+  border-radius: 6px;
+  border: 1px solid #ffaa22;
+  display: inline-block;
+  cursor: pointer;
+  color: #333333;
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 6px 24px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #ffee66;
+}
+.push:hover {
+  background: linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
+  background-color: #ffab22;
+}
+.push:active {
+  position: relative;
+  top: 1px;
 }
 
-.equal-sign:hover {
-  background-color: #4e9ed4;
-  order: 8;flex: 1;
-}
-.calculator-keys {
-  display: flex;
-  justify-content: space-between;
-  flex-flow: wrap row;
-  padding: 5px 5px 10px 5px;
-  border-radius: 4px;
-}
- 
-.operator {
-  flex-basis: 25%;
-
-}
-.number {
-flex-basis: 25%;
+.mine {
+  background-color: grey;
 }
 
 /*TodoList*/
@@ -285,6 +315,9 @@ input {
 .addBtn:hover {
   background-color: #bbb;
 }
+
+/*geolocation*/
+
 
 
 /* Mobile*/

@@ -31,7 +31,7 @@
 <aside>
     <div class="calculator">
 
-        <input type="text" class="calculator-screen" value="0" disabled />
+        <input type="button" class="calculator-screen" value="0" disabled />
       
         <div class="calculator-keys">
       
@@ -64,7 +64,19 @@
         </div>
       </div>
 </aside>
+<section class="mine">
+    <Script src="../scripts/dash.js"></Script>
+    <p id="goldMined">0 Gold Mined</p>
+    <button class="push" onclick="mineGold()">Mine Gold</button>
+    <button class="push" onclick="buyGoldPerClick()" id="perClickUpgrade">Upgrade Pickaxe (Currently Level 1) Cost: 10 Gold</button>
 
+</section>
+<div>
+    <button id = "find-me">Location</button><br/>
+<p id = "status"></p>
+<a id = "map-link" target="_blank"></a>
+<script src="../scripts/geolocation.js"></script>
+</div>
 <footer>
     <div class="cal">   
     <div class="month-indicator"> December 2019</div>
