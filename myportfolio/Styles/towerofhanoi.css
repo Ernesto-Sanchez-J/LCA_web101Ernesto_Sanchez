@@ -1,0 +1,63 @@
+body {
+    background-color: blue;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+}
+[data-row] {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 100px;
+    margin: 25px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: lightgrey;
+}
+[data-row].red {
+    background-color: lightgrey;
+}
+[data-row].yellow {
+    background-color: lightgrey;
+}
+[data-row].green {
+    background-color: lightgrey;
+}
+[data-color] {
+    height: 15px;
+    float: left;
+}
+[data-color="blue"] {
+    width: 20px;
+    background-color: red;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+[data-color="green"] {
+    width: 20px;
+    background-color:orange;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+[data-color="red"] {
+    width: 20px;
+    background-color: green;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+[data-color="yellow"] {
+    width: 20px;
+    background-color: blueviolet;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+#announce-game-won {
+    font-size: larger;
+    text-align: center;
+}
